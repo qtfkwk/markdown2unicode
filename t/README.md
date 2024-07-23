@@ -21,28 +21,18 @@ Please use it instead of this one.**
 
 ```text
 $ markdown2unicode -h
-Converter from markdown notation to unicode characters
-
-Usage: markdown2unicode [OPTIONS] [STRING]...
-
-Arguments:
-  [STRING]...  Markdown string(s)
-
-Options:
-  -i <PATH>      Input file(s)
-  -h, --help     Print help
-  -V, --version  Print version
+!run:../target/release/markdown2unicode -h
 ```
 
 ```text
 $ markdown2unicode -V
-markdown2unicode 0.2.0
+!run:../target/release/markdown2unicode -V
 ```
 
 # Examples
 
 ```text
 $ markdown2unicode 'Here is some *emphasis*, **strong**, ***strong emphasis***, ~~strike~~, and `code` text.'
-Here is some 𝘦𝘮𝘱𝘩𝘢𝘴𝘪𝘴, 𝐬𝐭𝐫𝐨𝐧𝐠, 𝒔𝒕𝒓𝒐𝒏𝒈 𝒆𝒎𝒑𝒉𝒂𝒔𝒊𝒔, ~~strike~~, and 𝚌𝚘𝚍𝚎 text.
+!run:../target/release/markdown2unicode 'Here is some *emphasis*, **strong**, ***strong emphasis***, ~~strike~~, and `code` text.' |perl -ne 'print unless /^$/'
 ```
 
