@@ -1,12 +1,12 @@
 [package]
 name = "markdown2unicode"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 description = "Converter from markdown notation to unicode characters"
 license = "GPL-3.0-only"
 repository = "https://github.com/qtfkwk/markdown2unicode"
 
 [dependencies]
-clap = { version = "4.5.9", features = ["derive", "wrap_help"] }
+clap = { version = "4.5.16", features = ["derive", "wrap_help"] }
 lazy_static = "1.5.0"
 
